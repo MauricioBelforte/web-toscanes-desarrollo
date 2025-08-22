@@ -1,0 +1,648 @@
+/* Global Reset */
+@font-face{
+    font-family: unineue;
+    src:url("../fuentes/Uni-Neue/UniNeueRegular.otf");
+    
+  }
+
+*  {
+    font-family: unineue ,'Allerta', arial, Tahoma;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+   font-family: unineue;
+   font-size: 25px;
+    text-align:center;
+    color:#fff;
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    
+
+   background-image: url("../imagenes/edificio14.jpg");
+  background-size: cover; /* Hace que la imagen cubra todo el fondo */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza el contenido */
+  background-position: center center; /* Centra la imagen */
+}
+h3{
+    text-shadow:1px 1px 1px #fff;
+}
+
+
+h1{
+    
+    font-weight: bold;
+    color: #E11C25;
+    margin: 1%;
+    font-size: 40px;
+   
+  }
+header{
+    
+}
+header nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #EDEDED;
+    height: 85px;
+    padding: 5px 2%;
+    justify-content: flex-end; 
+    align-items: center;
+   /* border-bottom: 0.3px solid #bdbdbd;*/
+    box-shadow: 2px 2px 2px 1px rgba(85, 85, 85, 0.2);
+    /*transition: all 1s ease-out 0s;*/
+    z-index: 1;
+
+    
+}
+header .logo{
+    cursor:pointer;
+    margin-right: auto;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+
+    list-style: none;
+}
+
+header .nav-links li{
+
+    display: inline-block;
+    padding: 0 0px;
+}
+
+header .nav-links li:hover,
+.overlay a:hover{
+
+    
+    
+}
+
+header .nav-links a{
+    font-size: 1.1rem;
+    
+    padding: 10px ;
+    
+    border-radius: 0%;
+    margin: 1px;
+   
+    
+}
+
+header .nav-links a:hover{
+    
+    
+    
+}
+/*
+header .nav-links  .normal{
+    color: rgb(174, 19, 19);  
+}*/
+.propiedades{
+    color:#697384; 
+   /* background-color: #EFEFEF;*/
+ /*   box-shadow: inset 0 0 0 2px rgb(255, 255, 255);*/ 
+}
+
+.propiedades:hover{
+    color:#0E2141 ; 
+    background-color: #EFEFEF;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255); 
+}
+ .administracion{
+  /*  background-color:#E11C25 ;*/
+    color: #697384;  
+}
+.administracion:hover{
+    background-color:#E11C25 ;
+    color: #ffffff;  
+}
+.inversiones{
+  /*  background-color:#0E2141 ;*/
+    color: #697384;  
+}
+
+.inversiones:hover{
+    background-color:#0E2141 ;
+    color: #ffffff;  
+}
+
+.normal{
+    
+    color: #697384;  
+}
+
+.normal:hover{
+    color: #c4c4c4;
+}
+.menu-hamburguesa{
+
+    display: none;
+}
+
+
+header button{
+    
+    
+    padding: 10px 15px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    color: rgb(168, 168, 168);
+   
+
+}
+
+header .btn button {
+    font-size: 5mm;
+    padding: 10px 25px;
+    background-color:#e4e4e4 ;
+    color:#0E2141 ;
+    
+}
+
+
+header .btn button:hover{ 
+
+    color: rgb(19, 20, 20);
+    background-color: rgb(202, 202, 202);
+    transform: scale(1.1);
+    
+}
+
+
+
+header .menu-hamburguesa {
+    
+}
+header .menu-hamburguesa button{
+   
+    background-color:#EFEFEF ;
+    padding: 0;
+    margin: 10px;
+    height: 40px;
+  
+}
+
+header .menu-hamburguesa button:hover{
+    transform: scale(1.1);
+ 
+}
+
+
+header .menu-hamburguesa button img{ 
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Cambios en el por encima de los 800px */
+@media screen and (min-width:800px){
+    .contenedor-principal{
+        display: flex;
+    }
+
+    .contenedor-medio {
+        width: 50%;
+    }
+
+    .contenedor-contacto{
+        font-size: 18px;
+    }
+
+
+}
+
+/* Inicio barra de navegacion Nav*/
+/* Cambios en el por debajo de los 800px */
+@media screen and (max-width:800px){
+    body{
+        
+         font-size: 15px;
+        
+    }
+    .nav-links, .btn{
+        display:none;
+    }
+    .menu-hamburguesa {
+        display: inherit;
+    }
+
+    .contenedor-principal{
+        display: block;
+        
+    }
+
+    .contenedor-medio {
+        width: 100%;
+    }
+    
+    .contenedor-contacto{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}
+
+
+/* Cambios por debajo de los 500px */
+@media screen and (max-width:500px){
+    header nav{
+        height: 60px;
+    }
+    header .logo img{
+        height: 50px;
+        width: auto; 
+    }
+    header .menu-hamburguesa button { 
+        height: 30px;
+    }
+    header .menu-hamburguesa button img{ 
+        height: 30px;
+    }
+    body{
+        
+         font-size: 15px;
+        }
+
+    .datosdecontacto p {
+        text-align: left;
+    }
+    .logosredes img{
+        width: 20px;
+        margin: 5px;
+    
+    }
+
+    .emails{
+        width: 100%;
+        
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    
+}
+
+
+/* Cambios por encima de los 500px */
+@media screen and (min-width:500px){
+    .logosredes img{
+        width: 50px;
+        margin: 20px;
+    }
+    .emails{
+        width: 50%;
+        margin: auto;
+    }
+    
+}
+
+header a {
+    text-decoration: none;
+    margin: 0;
+}
+
+header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #071628; 
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+header .overlay .overlay-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    
+
+}
+
+header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display:block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    width: 100%;
+    
+}
+
+header .overlay a:hover,
+header .overlay a:focus{
+    
+    transform: scale(1.1);
+}
+
+header .overlay .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 65px;
+    width: auto;
+    
+    
+    
+}
+
+@media screen and(max-height:450px){
+    
+    header .overlay a {
+        font-size: 20px;
+    }
+
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/* Fin barra de navegacion Nav*/
+
+
+
+/* Start  styling the page */
+
+.lienzo{
+    width: 100%;
+    height: 100%;
+    
+    color: #444;
+
+    opacity: 0.95;
+
+    
+   /* display:flex;*/
+
+}
+
+p{
+    padding: 5px;
+}
+
+
+.color-propiedades{
+    background-color:#EFEFEF;
+    color: #0E2141;
+}
+
+.color-inversiones{
+    background-color: #0E2141;
+    color: #EFEFEF;
+}
+
+.color-administracion{
+    background-color:#E11C25;
+    color: #EFEFEF;
+}
+
+.contenedor-principal{
+
+    width: 100%;
+    height: auto;
+   
+    color: #444;
+    margin: 20px auto;
+    padding: 2% ;
+    
+    
+   
+}
+
+.contenedor-azul{
+
+    
+    height: auto;
+    background-color: #0E2141;
+    color: #444;
+  /*  margin: 20px auto;*/
+    padding: 10px;
+    display:flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contenedor-azul img{
+   width: 100%;
+   height: fit-content;
+   margin: 2% ;
+  /*  padding: 20px;*/
+    display:flex;
+    overflow: hidden;
+    opacity: none;
+   
+}
+
+.contenedor-blanco{
+
+  
+    height: auto;
+    background-color: #EDEDED;
+    color: #0E2141;
+  /*  margin: 20px auto;*/
+   padding: 3% ;
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor-imagenesdetitulos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+   /* align-items: center;*/
+    justify-content: center;
+    
+
+}
+.contenedor-imagenesdetitulos img{
+    width: 50%;
+    height: auto;
+}
+
+.contenedor-administracion{
+
+    width: 100%;
+    height: fit-content;
+    
+    color: #444;
+  /*  margin: 20px auto;*/
+    padding: 20px;
+    display:flex;
+    overflow: hidden;
+}
+
+
+.contenedor-propiedades{
+
+    width: 100%;
+    height: fit-content;
+    
+    color: #444;
+  /*  margin: 20px auto;*/
+    padding: 20px;
+    display:flex;
+    overflow: hidden;
+}
+
+
+.contenedor-inversiones{
+
+    width: 100%;
+    height: fit-content;
+    
+    color: #444;
+  /*  margin: 20px auto;*/
+    padding: 20px;
+    display:flex;
+    overflow: hidden;
+}
+
+
+
+h2{
+    color: #0E2141;
+}
+.contenedor-contacto{
+    height: auto;
+    background-color: #e4e4e4;
+    color: #0E2141;
+  /*  margin: 20px auto;*/
+   padding: 2% ;
+  /* border-top: 1px groove #b8b8b8;*/
+    object-fit: cover;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+.datosdecontacto{
+    padding: 2%;
+    border-top: 1px groove #b8b8b8; 
+    
+    
+}
+
+.datosdecontacto p{
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    
+}
+
+
+
+.redessociales{
+    padding: 2%;
+}
+.logosredes img{
+    
+    transition: all ease-in-out 0.2s;
+    
+    filter: brightness(0%) grayscale(100%);
+
+}
+
+.logosredes img:hover{
+    filter: brightness(0.9);
+
+}
+
+/* ALINEACION TEXTO */
+
+
+footer {
+    background: #242424;
+    color: #0E2141;
+    border-top: 4px solid #0E2141;
+    
+}
+
+ footer .contenedor-pie p {
+    padding: 25px 0;
+    width: 85%;
+    
+    margin:auto;
+    font-size:small;
+    
+}
+.pie {
+    text-align: center; 
+    color: #EFEFEF;
+}
+
+
+.texto-web {
+  color: #0E2141; /* Color de la letra */
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid #FFFFFF; /* Borde blanco */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  display: inline-block; /* Hace que el fondo se ajuste al texto */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-family: 'Allerta', sans-serif; /* Usar la fuente especificada */
+  text-align: center; /* Centrar el texto */
+  margin-top: 10px; /* Separar el texto de la imagen */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
