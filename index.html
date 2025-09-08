@@ -22,9 +22,9 @@
 
       <ul class="nav-links">
         <!-- Cambié el enlace de "Propiedades" para redirigir a la nueva URL -->
+        <li><a href="#administracion" class="administracion">Administración</a></li>
         <li><a href="https://toscanes73.kitepropcrm.com/" class="propiedades" target="_blank">Propiedades</a></li>
         <li><a href="#inversiones" class="inversiones">Inversiones</a></li>
-        <li><a href="#administracion" class="administracion">Administración</a></li>
       </ul>
 
       <a href="#contacto" class="btn"><button> Contacto</button></a>
@@ -36,10 +36,10 @@
         <a onclick="closeNav()" class="close normal" href="#">&times;</a>
         <div class="overlay-content">
           <!-- Cambié el enlace de "Propiedades" también en el menú móvil -->
+          <a onclick="closeNav()" class="administracion" href="#administracion">Administración</a>
           <a onclick="closeNav()" class="propiedades" href="https://toscanes73.kitepropcrm.com/"
             target="_blank">Propiedades</a>
           <a onclick="closeNav()" class="inversiones" href="#inversiones">Inversiones</a>
-          <a onclick="closeNav()" class="administracion" href="#administracion">Administración</a>
           <a onclick="closeNav()" class="normal" href="#contacto">Contacto</a>
         </div>
       </div>
@@ -59,67 +59,86 @@
       </div>
     </div>
 
+    <div id="administracion" class="contenedor-principal color-administracion">
+      <div class="contenedor-administracion">
+        <div class="contenedor-modular">
+          <div class="contenedor-imagenesdetitulos">
+            <img src="imagenes/administracion.png" alt="imagen del logo toscanes administracion">
+          </div>
+        </div>
+        <div class="contenedor-modular">
+
+          <div id="servicios-administracion" class="servicios-ocultos">
+            <h3><strong>Back Office:</strong> gestionamos y ejecutamos los procesos administrativos que tu empresa
+              necesita.</h3>
+            <br>
+            <ul>
+              <li>Facturación y cobranza</li>
+              <li>Cuentas por Cobrar</li>
+              <li>Cuentas por Pagar</li>
+              <li>Conciliación de ingresos y egresos</li>
+              <li>Atención a clientes</li>
+              <li>Control de expedientes</li>
+              <li>Integración de gastos corporativos</li>
+              <li>Tesorería y gestión de proveedores</li>
+              <li>Definición y documentación de procesos</li>
+              <li>Alineación y mejora de procesos</li>
+              <li>Reportes operativos, estadísticos y directivos</li>
+              <li>Elaboración y envío de reportes al área contable</li>
+            </ul>
+          </div>
+          <div class="ver-mas-container">
+            <button id="btn-ver-mas" class="btn-ver-mas">Ver más</button>
+            <span id="arrow-indicator" class="arrow-indicator">&#9660;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <div id="propiedades" class="contenedor-principal color-propiedades">
 
       <div class="contenedor-propiedades">
-        <!-- Cambié el enlace aquí también -->
-        <a href="https://toscanes73.kitepropcrm.com/" target="_blank">
+        <div class="contenedor-modular">
           <div class="contenedor-imagenesdetitulos">
             <img src="imagenes/propiedades.png" alt="imagen del logo toscanes propiedades">
           </div>
-          <p class="texto-web">Visita nuestra web</p>
-        </a>
+        </div>
+        <div class="contenedor-modular">
+          <!-- Cambié el enlace aquí también -->
+          <a href="https://toscanes73.kitepropcrm.com/" target="_blank">
+
+            <p class="texto-web">Visita nuestra web</p>
+          </a>
+        </div>
+
+
       </div>
 
     </div>
 
     <div id="inversiones" class="contenedor-principal color-inversiones">
       <div class="contenedor-inversiones ">
-        <div class="contenedor-imagenesdetitulos">
-          <img src="imagenes/inversiones.png" alt="imagen del logo toscanes inversiones">
-        </div>
-      </div>
-    </div>
-
-    <div id="administracion" class="contenedor-principal color-administracion">
-      <div class="contenedor-administracion">
-        <div class="contenedor-medio">
+        <div class="contenedor-modular">
           <div class="contenedor-imagenesdetitulos">
-            <img src="imagenes/administracion.png" alt="imagen del logo toscanes administracion">
+            <img src="imagenes/inversiones.png" alt="imagen del logo toscanes inversiones">
           </div>
         </div>
-        <div class="contenedor-medio">
 
-          <p><strong>Back Office:</strong> gestionamos y ejecutamos los procesos administrativos que tu empresa
-            necesita.</p>
-          <br>
-          <ul>
-            <li>Facturación y cobranza</li>
-            <li>Cuentas por Cobrar</li>
-            <li>Cuentas por Pagar</li>
-            <li>Conciliación de ingresos y egresos</li>
-            <li>Atención a clientes</li>
-            <li>Control de expedientes</li>
-            <li>Integración de gastos corporativos</li>
-            <li>Tesorería y gestión de proveedores</li>
-            <li>Definición y documentación de procesos</li>
-            <li>Alineación y mejora de procesos</li>
-            <li>Reportes operativos, estadísticos y directivos</li>
-            <li>Elaboración y envío de reportes al área contable</li>
-          </ul>
-
-        </div>
       </div>
     </div>
+
+
   </div>
 
   <div id="contacto" class="contenedor-contacto">
     <div class="datosdecontacto">
       <h2>CONTACTO</h2>
       <div class="emails">
+        <p class="color-administracion">ADMINISTRACION: ✉ <br>administracion@toscanes.com.ar</p>
         <p class="color-propiedades">PROPIEDADES: ✉ <br>fabian@toscanes.com.ar </p>
         <p class="color-inversiones">INVERSIONES: ✉ <br>fabricio@toscanes.com.ar </p>
-        <p class="color-administracion">ADMINISTRACION: ✉ <br>administracion@toscanes.com.ar</p>
       </div>
     </div>
     <div class="redessociales">
