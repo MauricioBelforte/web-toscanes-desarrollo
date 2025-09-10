@@ -484,22 +484,22 @@ footer .contenedor-pie p {
 
 
 .texto-web {
-    color: #EFEFEF;
-    /* Color de la letra */
+    /*     color: #EFEFEF;
+
     background-color: transparent;
-    /* Fondo transparente */
+
     border: 2px solid #FFFFFF;
-    /* Borde blanco */
+  
     padding: 10px 20px;
-    /* Espaciado alrededor del texto */
+   
     display: inline-block;
-    /* Hace que el fondo se ajuste al texto */
+
     font-size: 16px;
-    /* Tamaño de la fuente */
+   
     font-family: 'Allerta', sans-serif;
-    /* Usar la fuente especificada */
-    text-align: center;
-    /* Centrar el texto */
+   
+    text-align: center; */
+
 
     text-decoration: none;
     /* Eliminar subrayado del enlace */
@@ -537,6 +537,7 @@ footer .contenedor-pie p {
     border-radius: 5px;
     font-size: 16px;
     transition: all ease-in-out 0.2s;
+    text-decoration: none;
 
 }
 
