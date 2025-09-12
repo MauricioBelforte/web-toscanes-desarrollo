@@ -242,19 +242,19 @@ p {
 }
 
 
-.color-propiedades {
+.color-rojo {
     /* background-color:#EFEFEF;
     color: #0E2141; */
     background-color: #E11C25;
     color: #EFEFEF;
 }
 
-.color-inversiones {
+.color-azul {
     background-color: #0E2141;
     color: #EFEFEF;
 }
 
-.color-administracion {
+.color-blanco {
     /*   background-color:#E11C25;
     color: #EFEFEF; */
     background-color: #EFEFEF;
@@ -529,8 +529,6 @@ footer .contenedor-pie p {
 }
 
 .btn-ver-mas {
-    background-color: #0E2141;
-    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -540,6 +538,8 @@ footer .contenedor-pie p {
     text-decoration: none;
 
 }
+
+
 
 .arrow-indicator {
     font-size: 24px;
@@ -579,7 +579,7 @@ footer .contenedor-pie p {
 }
 
 .btn-ver-mas:hover {
-    background-color: rgb(6, 22, 47);
+    /* background-color: rgb(6, 22, 47); */
     transform: scale(1.1);
     transition: all ease-in-out 0.2s;
 
