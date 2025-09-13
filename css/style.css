@@ -345,7 +345,7 @@ p {
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+
 }
 
 .contenedor-administracion .contenedor-imagenesdetitulos {
@@ -365,7 +365,7 @@ p {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+
 }
 
 
@@ -376,14 +376,14 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+
 }
 
 .contenedor-modular {
-
+    width: 100%;
     flex-grow: 1;
     text-align: center;
     align-items: center;
@@ -542,8 +542,8 @@ footer .contenedor-pie p {
 
 
 .arrow-indicator {
+    background-color: rgba(255, 255, 255, 0);
     font-size: 24px;
-    color: #0E2141;
     margin-top: 10px;
     animation: 3s fade-and-move 2s infinite;
     transition: transform 1.4s ease-in-out;
