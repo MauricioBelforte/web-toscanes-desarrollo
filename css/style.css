@@ -275,13 +275,13 @@ p {
 
 }
 
-.contenedor-azul {
+/* .contenedor-azul {
 
 
     height: auto;
     background-color: #0E2141;
     color: #444;
-    /*  margin: 20px auto;*/
+    // margin: 20px auto;
     padding: 10px;
     display: flex;
     overflow: hidden;
@@ -290,18 +290,18 @@ p {
     justify-content: center;
 
 }
+ */
 
-
-.contenedor-azul img {
+/* .contenedor-azul img {
     width: 100%;
     height: fit-content;
     margin: 2%;
-    /*  padding: 20px;*/
+    // padding: 20px;
     display: flex;
     overflow: hidden;
     opacity: none;
 
-}
+} */
 
 .contenedor-blanco {
 
