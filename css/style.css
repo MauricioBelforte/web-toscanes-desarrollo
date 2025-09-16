@@ -362,7 +362,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px;
+    padding: 20px 20px 30px;
     display: flex;
     flex-direction: column;
 
@@ -681,6 +681,26 @@ ul {
         margin-bottom: 1vw;
     }
 
+    .contenedor-administracion {
+        padding: 20px 20px 10px 20px;
+
+    }
+
+
+    .contenedor-propiedades {
+
+        padding: 20px 20px 35px;
+    }
+
+
+    .contenedor-inversiones {
+
+        padding: 20px 20px 10px 20px;
+
+    }
+
+
+
     .logosredes img {
         width: 40px;
         margin: 15px;
@@ -751,6 +771,11 @@ ul {
         height: auto;
         margin-bottom: 1vw;
     }
+
+
+
+
+
 }
 
 
