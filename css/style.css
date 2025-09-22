@@ -342,7 +342,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px 20px 10px 20px;
+    padding: 40px 20px 20px 20px;
     display: flex;
     flex-direction: column;
 
@@ -682,7 +682,7 @@ ul {
     }
 
     .contenedor-administracion {
-        padding: 20px 20px 10px 20px;
+        padding: 30px 20px 20px 20px;
 
     }
 
