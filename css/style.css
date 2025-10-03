@@ -514,7 +514,7 @@ footer .contenedor-pie p {
 }
 
 .servicios-visibles {
-    max-height: 1000px;
+    max-height: 10000px;
     /* Un valor suficientemente grande para mostrar todo el contenido */
     opacity: 1;
     transform: translateY(0);
@@ -859,3 +859,156 @@ header .overlay .close {
 }
 
 /* Fin barra de navegacion Nav*/
+
+/* --- Estilos sección Inversiones --- */
+.encabezado-seccion {
+    margin: 2vw;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.titulo-principal-inversiones {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0E2141;
+    background-color: #acb3c1;
+    padding: 1%;
+    border-radius: 10px;
+    max-width: 60vw;
+    margin: 0 auto 10px;
+}
+
+.descripcion-principal-inversiones {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 60vw;
+    margin: 0 auto 30px;
+    opacity: 0.95;
+}
+
+.destacado-inversiones {
+    font-weight: 600;
+    color: #5685ff;
+    /* Color rojo de la paleta */
+}
+
+.contenedor-badges {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.badge-regulacion {
+    display: inline-block;
+    background: #EFEFEF;
+    /* Color blanco de la paleta */
+    color: #0E2141;
+    /* Color azul de la paleta */
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 10px 5px;
+}
+
+.contenedor-cards-inversiones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tarjeta-servicio-inversiones {
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    flex: 1 1 calc(33.333% - 30px);
+    min-width: 280px;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+}
+
+.tarjeta-servicio-inversiones::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #E11C25;
+    /* Color rojo de la paleta */
+}
+
+.tarjeta-servicio-inversiones:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.icono-servicio {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-servicio-inversiones .titulo-servicio {
+    font-size: 1.5rem;
+    color: #0E2141;
+    /* Color azul de la paleta */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tarjeta-servicio-inversiones .descripcion-servicio {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .tarjeta-servicio-inversiones {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .titulo-principal-inversiones {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- Estilos Misión Inversiones --- */
+.seccion-mision-inversiones {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo-mision-inversiones {
+    font-size: 1.8rem;
+    color: #0E2141;
+    /* Color azul de la paleta */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: none;
+    /* Quitamos la sombra de texto global para este título */
+}
+
+.texto-mision-inversiones {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Fin Estilos Misión Inversiones */

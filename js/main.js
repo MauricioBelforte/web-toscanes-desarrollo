@@ -1,26 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Lógica para el botón "Ver más"
-    const btnVerMas = document.getElementById('btn-ver-mas');
-    const serviciosContainer = document.getElementById('servicios-administracion');
-    const arrow = document.getElementById('arrow-indicator');
+    /**
+     * Configura la funcionalidad de "Ver más / Ocultar" para una sección.
+     * @param {string} idBoton - El ID del elemento botón.
+     * @param {string} idContenedor - El ID del contenedor de contenido a mostrar/ocultar.
+     * @param {string} idFlecha - El ID del elemento flecha indicador.
+     */
+    function configurarBotonVerMas(idBoton, idContenedor, idFlecha) {
+        const boton = document.getElementById(idBoton);
+        const contenedor = document.getElementById(idContenedor);
+        const flecha = document.getElementById(idFlecha);
 
-    if (btnVerMas && serviciosContainer && arrow) {
-        btnVerMas.addEventListener('click', function () {
-            const isVisible = serviciosContainer.classList.contains('servicios-visibles');
+        if (!boton || !contenedor) {
+            console.warn(`No se encontraron los elementos para configurar el botón "Ver más": ${idBoton}, ${idContenedor}`);
+            return;
+        }
 
-            if (isVisible) {
-                serviciosContainer.classList.remove('servicios-visibles');
-                btnVerMas.textContent = 'Ver más';
-                arrow.classList.remove('up'); // Quita la rotación para que apunte hacia abajo
-                arrow.classList.remove('arrow-hidden'); // Muestra la flecha
-            } else {
-                serviciosContainer.classList.add('servicios-visibles');
-                btnVerMas.textContent = 'Ocultar';
-                arrow.classList.add('up'); // Rota la flecha (aunque no se verá)
-                arrow.classList.add('arrow-hidden'); // Oculta la flecha
+        boton.addEventListener('click', function () {
+            const esVisible = contenedor.classList.toggle('servicios-visibles');
+
+            boton.textContent = esVisible ? 'Ocultar' : 'Ver más';
+
+            if (flecha) {
+                flecha.classList.toggle('up', esVisible);
+                flecha.classList.toggle('arrow-hidden', esVisible);
             }
         });
     }
+
+    // Configuración para la sección de Administración
+    configurarBotonVerMas('btn-ver-mas-administracion', 'servicios-administracion', 'arrow-indicator-administracion');
+
+    // Configuración para la sección de Inversiones
+    configurarBotonVerMas('btn-ver-mas-inversiones', 'servicios-inversiones', 'arrow-indicator-inversiones');
 });
 
 // Funciones para el menú de navegación móvil

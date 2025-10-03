@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Finanzas e Inversiones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .seccion-servicios {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .encabezado-seccion {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+
+        .titulo-principal {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .descripcion-principal {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+        }
+
+        .destacado {
+            font-weight: 600;
+            color: #ffd700;
+        }
+
+        .contenedor-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta-servicio {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            flex: 1 1 calc(33.333% - 30px);
+            min-width: 280px;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tarjeta-servicio::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .tarjeta-servicio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .icono-servicio {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .titulo-servicio {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .descripcion-servicio {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .seccion-mision {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .titulo-mision {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .texto-mision {
+            color: #444;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge-regulacion {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 10px 5px;
+        }
+
+        .contenedor-badges {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .titulo-principal {
+                font-size: 2rem;
+            }
+
+            .descripcion-principal {
+                font-size: 1rem;
+            }
+
+            .tarjeta-servicio {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .seccion-mision {
+                padding: 30px 20px;
+            }
+
+            .titulo-mision {
+                font-size: 1.5rem;
+            }
+
+            .texto-mision {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .seccion-servicios {
+                padding: 40px 15px;
+            }
+
+            .titulo-principal {
+                font-size: 1.6rem;
+            }
+
+            .tarjeta-servicio {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="seccion-servicios">
+        <div class="encabezado-seccion">
+            <h1 class="titulo-principal">Servicio de Finanzas e Inversiones</h1>
+            <p class="descripcion-principal">
+                Transformamos la gestión financiera en una ventaja estratégica, brindando soluciones innovadoras en el 
+                <span class="destacado">mercado de capitales, financiamiento bancario y consultoría financiera integral</span>, 
+                ofreciendo un enfoque dinámico y personalizado para cada cliente. Nuestro compromiso es aportar valor mediante 
+                herramientas innovadoras, condiciones preferenciales y asesoramiento de alto nivel.
+            </p>
+            
+            <div class="contenedor-badges">
+                <span class="badge-regulacion">🏛️ Agentes Productores CNV</span>
+                <span class="badge-regulacion">📊 Balanz Capital</span>
+                <span class="badge-regulacion">🔒 Regulado por CNV</span>
+            </div>
+        </div>
+
+        <div class="contenedor-cards">
+            <article class="tarjeta-servicio">
+                <div class="icono-servicio">📈</div>
+                <h2 class="titulo-servicio">Mercado Bursátil</h2>
+                <p class="descripcion-servicio">
+                    Inversión y financiamiento con las mejores condiciones. Acceso a instrumentos financieros estratégicos, 
+                    optimización de carteras de activos y estructuración de financiamiento con las condiciones más competitivas del mercado.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <div class="icono-servicio">🏦</div>
+                <h2 class="titulo-servicio">Líneas Financieras Bancarias</h2>
+                <p class="descripcion-servicio">
+                    Gestión y negociación con bancos, entidades financieras y SGR's, asegurando soluciones de financiamiento 
+                    eficientes y adaptadas a las necesidades de cada empresa cliente.
+                </p>
+            </article>
+
+            <article class="tarjeta-servicio">
+                <div class="icono-servicio">💼</div>
+                <h2 class="titulo-servicio">Consultoría Financiera Integral</h2>
+                <p class="descripcion-servicio">
+                    Desarrollo de estrategias personalizadas en planificación financiera, optimización de costos, 
+                    estructuración de inversiones y análisis de viabilidad de proyectos, garantizando toma de decisiones más eficientes y rentables.
+                </p>
+            </article>
+        </div>
+
+        <div class="seccion-mision">
+            <h2 class="titulo-mision">Nuestra Misión</h2>
+            <p class="texto-mision">
+                Potenciar la estructura financiera de cada organización, optimizando costos, maximizando inversiones y 
+                facilitando el acceso a financiamiento en condiciones preferenciales. Nos enfocamos en generar valor real y sostenible, 
+                asegurando que cada decisión financiera esté alineada con la visión y objetivos de nuestros clientes.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
