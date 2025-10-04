@@ -310,7 +310,7 @@ p {
     background-color: #EDEDED;
     color: #0E2141;
     /*  margin: 20px auto;*/
-    padding: 3%;
+    padding: 20px 20px 30px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -362,7 +362,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px 20px 30px;
+    padding: 20px 20px 40px 30px;
     display: flex;
     flex-direction: column;
 
@@ -376,7 +376,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
 
@@ -695,7 +695,7 @@ ul {
 
     .contenedor-inversiones {
 
-        padding: 20px 20px 10px 20px;
+        padding: 20px 20px 20px 20px;
 
     }
 
