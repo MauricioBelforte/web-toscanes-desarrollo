@@ -362,7 +362,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 20px 20px 40px 30px;
+    padding: 20px 20px 50px 30px;
     display: flex;
     flex-direction: column;
 
@@ -389,7 +389,7 @@ p {
     align-items: center;
     justify-content: center;
     align-self: center;
-    gap: 3vw;
+    gap: 1vw;
     /* padding: 2vw; */
 
 
@@ -689,7 +689,7 @@ ul {
 
     .contenedor-propiedades {
 
-        padding: 20px 20px 35px;
+        padding: 20px 20px 45px 30px;
     }
 
 
@@ -860,6 +860,46 @@ header .overlay .close {
 
 /* Fin barra de navegacion Nav*/
 
+.titulo-principal-administracion {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0E2141;
+    background-color: #acb3c1;
+    padding: 1%;
+    border-radius: 10px;
+    max-width: 70vw;
+    margin: 40px auto 25px;
+}
+
+
+.descripcion-principal-administracion {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 60vw;
+    margin: 0 auto 30px;
+    opacity: 0.95;
+}
+
+
+/* --- Estilos sección Propiedades --- */
+.titulo-principal-propiedades {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0E2141;
+    background-color: #acb3c1;
+    padding: 1%;
+    border-radius: 10px;
+    max-width: 70vw;
+    margin: 50px auto 10px;
+}
+
+
 /* --- Estilos sección Inversiones --- */
 .encabezado-seccion {
     margin: 2vw;
@@ -878,7 +918,7 @@ header .overlay .close {
     background-color: #acb3c1;
     padding: 1%;
     border-radius: 10px;
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 0 auto 10px;
 }
 
@@ -977,8 +1017,24 @@ header .overlay .close {
         max-width: 100%;
     }
 
+    .titulo-principal-administracion {
+        font-size: 1.2rem;
+    }
+
+    .titulo-principal-propiedades {
+        font-size: 1.2rem;
+    }
+
     .titulo-principal-inversiones {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .descripcion-principal-inversiones {
+        font-size: 0.95rem;
+    }
+
+    .descripcion-principal-administracion {
+        font-size: 0.95rem;
     }
 }
 
