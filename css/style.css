@@ -405,6 +405,86 @@ h3 {
     margin-top: 3vw;
 }
 
+
+
+/* --- Estilos tarjetas administración --- */
+.contenedor-cards-administracion {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    margin: 60px 80px;
+}
+
+.tarjeta-servicio-administracion {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+}
+
+.tarjeta-servicio-administracion:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-servicio-administracion .titulo-servicio {
+    font-size: 1.2rem;
+    color: #0E2141;
+    margin-bottom: 15px;
+    font-weight: 700;
+
+}
+
+/* Fin Estilos tarjetas administración */
+
+
+
+
+
+
+
+/* --- Estilos Misión Inversiones --- */
+.seccion-mision-inversiones {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.titulo-mision-inversiones {
+    font-size: 1.8rem;
+    color: #0E2141;
+    /* Color azul de la paleta */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: none;
+    /* Quitamos la sombra de texto global para este título */
+}
+
+.texto-mision-inversiones {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
+
+
+/* Fin Estilos Misión Inversiones */
+
 .contenedor-contacto {
     height: auto;
     background-color: #e4e4e4;
@@ -514,6 +594,7 @@ footer .contenedor-pie p {
 }
 
 .servicios-visibles {
+    width: 100%;
     max-height: 10000px;
     /* Un valor suficientemente grande para mostrar todo el contenido */
     opacity: 1;
@@ -890,6 +971,16 @@ header .overlay .close {
     opacity: 0.95;
 }
 
+.tarjeta-servicio-administracion ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #E11C25;
+    /* Color rojo de la paleta */
+}
 
 /* --- Estilos sección Propiedades --- */
 .titulo-principal-propiedades {
@@ -1001,7 +1092,7 @@ header .overlay .close {
 
 .icono-servicio {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .tarjeta-servicio-inversiones .titulo-servicio {
@@ -1044,34 +1135,3 @@ header .overlay .close {
         font-size: 0.95rem;
     }
 }
-
-/* --- Estilos Misión Inversiones --- */
-.seccion-mision-inversiones {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 40px;
-    margin-top: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.titulo-mision-inversiones {
-    font-size: 1.8rem;
-    color: #0E2141;
-    /* Color azul de la paleta */
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: none;
-    /* Quitamos la sombra de texto global para este título */
-}
-
-.texto-mision-inversiones {
-    color: #444;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    max-width: 90vw;
-    margin: 0 auto;
-    padding: 0;
-}
-
-/* Fin Estilos Misión Inversiones */
