@@ -35,7 +35,9 @@ body {
 
 h3 {
     text-shadow: 1px 1px 1px #fff;
+    margin-top: 1vw;
 }
+
 
 
 h1 {
@@ -230,7 +232,7 @@ header .menu-hamburguesa button img {
 
     color: #444;
 
-    opacity: 0.95;
+    /*     opacity: 0.95; */
 
 
     /* display:flex;*/
@@ -401,9 +403,6 @@ h2 {
     color: #0E2141;
 }
 
-h3 {
-    margin-top: 3vw;
-}
 
 
 
@@ -413,24 +412,27 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 40px;
-    margin: 60px 80px;
+    margin: 3vw 4vw;
 }
 
 .tarjeta-servicio-administracion {
     background: white;
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
     color: #333;
     text-align: center;
+    border-color: #555;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .tarjeta-servicio-administracion:hover {
     transform: translateY(-10px);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tarjeta-servicio-administracion .titulo-servicio {
@@ -453,7 +455,7 @@ h3 {
 .seccion-mision-inversiones {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: 40px;
+    padding: 20px 40px 40px;
     margin-top: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -964,9 +966,9 @@ header .overlay .close {
 
 
 .descripcion-principal-administracion {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.8;
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 0 auto 0px;
     opacity: 0.95;
 }
