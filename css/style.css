@@ -117,7 +117,7 @@ header .nav-links  .normal{
     color: rgb(174, 19, 19);  
 }*/
 .propiedades {
-    color: #697384;
+    color: #49515d;
     /* background-color: #EFEFEF;*/
     /*   box-shadow: inset 0 0 0 2px rgb(255, 255, 255);*/
 }
@@ -132,7 +132,7 @@ header .nav-links  .normal{
 
 .administracion {
     /*  background-color:#E11C25 ;*/
-    color: #697384;
+    color: #49515d;
 }
 
 .administracion:hover {
@@ -143,7 +143,7 @@ header .nav-links  .normal{
 
 .inversiones {
     /*  background-color:#0E2141 ;*/
-    color: #697384;
+    color: #49515d;
 }
 
 .inversiones:hover {
