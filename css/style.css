@@ -344,7 +344,7 @@ p {
 
     color: #444;
     /*  margin: 20px auto;*/
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
     display: flex;
     flex-direction: column;
 
@@ -352,7 +352,7 @@ p {
 
 .contenedor-administracion .contenedor-imagenesdetitulos {
 
-    padding: 20px 20px 3vw 20px;
+    padding: 1.5vw 20px 3vw 20px;
 }
 
 
@@ -772,9 +772,16 @@ li {
 
     }
 
+
+
     .contenedor-administracion {
         padding: 20px 20px 20px 20px;
 
+    }
+
+    .contenedor-administracion .contenedor-imagenesdetitulos {
+
+        padding: 4vw 20px 3vw 20px;
     }
 
 
@@ -962,7 +969,7 @@ header .overlay .close {
     padding: 1%;
     border-radius: 10px;
     max-width: 70vw;
-    margin: 3vw auto 2.5vw;
+    margin: 20px auto 2.5vw;
 }
 
 
