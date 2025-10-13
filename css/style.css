@@ -1135,13 +1135,17 @@ header .overlay .close {
 
     .titulo-principal-inversiones {
         font-size: 1.2rem;
+        max-width: 90vw;
     }
 
     .descripcion-principal-inversiones {
         font-size: 0.95rem;
+        max-width: 80vw;
+        margin: 0 auto 30px;
     }
 
     .descripcion-principal-administracion {
         font-size: 0.95rem;
+
     }
 }
