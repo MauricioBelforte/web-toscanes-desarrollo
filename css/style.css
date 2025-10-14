@@ -410,9 +410,12 @@ h2 {
 .contenedor-cards-administracion {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 40px;
     margin: 3vw 4vw;
+
+
 }
 
 .tarjeta-servicio-administracion {
@@ -428,6 +431,14 @@ h2 {
     border-color: #555;
     border-width: 2px;
     border-style: solid;
+    width: 100%;
+    min-width: 230px;
+    max-width: 310px;
+    margin: 0 auto;
+    min-height: 160px;
+
+
+
 }
 
 .tarjeta-servicio-administracion:hover {
@@ -1127,6 +1138,7 @@ header .overlay .close {
 
     .titulo-principal-administracion {
         font-size: 1.2rem;
+        max-width: 90vw;
     }
 
     .titulo-principal-propiedades {
@@ -1146,6 +1158,7 @@ header .overlay .close {
 
     .descripcion-principal-administracion {
         font-size: 0.95rem;
+        max-width: 80vw;
 
     }
 }
