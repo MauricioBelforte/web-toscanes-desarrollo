@@ -432,7 +432,7 @@ h2 {
     border-width: 2px;
     border-style: solid;
     width: 100%;
-    min-width: 230px;
+    /* min-width: 230px; */
     max-width: 310px;
     margin: 0 auto;
     min-height: 160px;
@@ -1024,7 +1024,7 @@ header .overlay .close {
     margin: 2vw;
     text-align: center;
     margin-bottom: 30px;
-    color: #fff;
+
 }
 
 .titulo-principal-inversiones {
