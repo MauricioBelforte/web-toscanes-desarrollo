@@ -1161,4 +1161,10 @@ header .overlay .close {
         max-width: 80vw;
 
     }
+
+    .seccion-mision-inversiones {
+
+        padding: 30px 40px 40px;
+
+    }
 }
