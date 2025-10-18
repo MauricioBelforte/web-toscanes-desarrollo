@@ -1167,4 +1167,8 @@ header .overlay .close {
         padding: 30px 40px 40px;
 
     }
+
+    h1 {
+        margin-top: 10px;
+    }
 }
