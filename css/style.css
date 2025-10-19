@@ -347,13 +347,13 @@ p {
     padding: 40px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    gap: 10px;
 
 }
 
 .contenedor-administracion .contenedor-imagenesdetitulos {
 
-    padding: 1.5vw 20px 3vw 20px;
+    padding: 1.5vw 20px 2vw 20px;
 }
 
 
@@ -794,7 +794,7 @@ li {
 
     .contenedor-administracion .contenedor-imagenesdetitulos {
 
-        padding: 4vw 20px 3vw 20px;
+        padding: 4vw 20px 2vw 20px;
     }
 
 
