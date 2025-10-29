@@ -437,7 +437,11 @@ h2 {
     /* min-width: 230px; */
     max-width: 310px;
     margin: 0 auto;
-    min-height: 160px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 
