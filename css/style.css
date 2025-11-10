@@ -460,6 +460,12 @@ h2 {
 
 }
 
+.tarjeta-servicio-administracion .descripcion-servicio-admin {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
 /* Fin Estilos tarjetas administración */
 
 
